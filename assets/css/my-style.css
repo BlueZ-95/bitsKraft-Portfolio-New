@@ -1,3 +1,7 @@
+.collapsedNavbar {
+  width: 100vw;
+}
+
 .card {
   cursor: pointer;
 }
