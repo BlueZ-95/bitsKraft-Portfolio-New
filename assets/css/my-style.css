@@ -1,0 +1,10 @@
+.card {
+  cursor: pointer;
+}
+
+#aboutUsFeatures h4:hover {
+  color: #3182ce;
+  transform: translateX(5px);
+  transition: 0.2s;
+  cursor: pointer;
+}

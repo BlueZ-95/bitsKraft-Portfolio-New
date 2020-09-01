@@ -19,6 +19,7 @@
     />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/my-style.css" />
   </head>
   <body class="text-gray-800 antialiased">
     <!-- Navigation -->
@@ -33,7 +34,7 @@
         >
           <a
             class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            href="#"
             >bitsKraft</a
           ><button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -51,7 +52,6 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg"
                 ></i
@@ -61,7 +61,6 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
                 ></i
@@ -71,7 +70,6 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
                 ></i
@@ -93,7 +91,10 @@
         <!-- Background Image -->
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="background: url('./assets/images/main-img-1.jpg')"
+          style="
+            background: url('./assets/images/main-img-1.jpg');
+            background-repeat: no-repeat;
+          "
         >
           <!-- Overlay -->
           <span
@@ -159,7 +160,7 @@
           <div class="flex flex-wrap">
             <!-- Card -->
             <div
-              class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"
+              class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center card"
               data-aos="fade-up"
               data-aos-delay="350"
             >
@@ -183,7 +184,10 @@
               </div>
             </div>
             <!-- Card -->
-            <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up">
+            <div
+              class="w-full md:w-4/12 px-4 text-center card"
+              data-aos="fade-up"
+            >
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
@@ -206,7 +210,7 @@
             </div>
             <!-- Card -->
             <div
-              class="pt-6 w-full md:w-4/12 px-4 text-center"
+              class="pt-6 w-full md:w-4/12 px-4 text-center card"
               data-aos="fade-up"
               data-aos-delay="500"
             >
@@ -344,8 +348,14 @@
               <!-- Image -->
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg"
+                class="max-w-full rounded-lg shadow-2xl"
                 src="https://images.unsplash.com/photo-1530036846422-afb4b7af2fd4?ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80"
+                data-tilt
+                data-tilt-speed="400"
+                data-tilt-scale="1.05"
+                data-tilt-max="10"
+                data-tilt-perspective="500"
+                data-tilt-reverse="true"
               />
             </div>
             <!-- Text Box Container-->
@@ -369,12 +379,16 @@
                   free for them to make their presence online.
                 </p>
                 <!-- List -->
-                <ul class="list-none mt-6">
+                <ul class="list-none mt-6" id="aboutUsFeatures">
                   <li class="py-2">
-                    <div class="flex items-center">
+                    <div
+                      class="flex items-center"
+                      data-aos="zoom-in"
+                      data-aos-delay="500"
+                    >
                       <div>
                         <span
-                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
+                          class="text-smm font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
                         >
                           <!-- Icon -->
                           <i class="fas fa-fingerprint"></i>
@@ -388,10 +402,14 @@
                     </div>
                   </li>
                   <li class="py-2">
-                    <div class="flex items-center">
+                    <div
+                      class="flex items-center"
+                      data-aos="zoom-in"
+                      data-aos-delay="650"
+                    >
                       <div>
                         <span
-                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
+                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
                         >
                           <!-- Icon -->
                           <i class="fas fa-cog"></i>
@@ -403,10 +421,14 @@
                     </div>
                   </li>
                   <li class="py-2">
-                    <div class="flex items-center">
+                    <div
+                      class="flex items-center"
+                      data-aos="zoom-in"
+                      data-aos-delay="800"
+                    >
                       <div>
                         <span
-                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
+                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
                         >
                           <!-- Icon -->
                           <i class="far fa-paper-plane"></i>
@@ -418,10 +440,14 @@
                     </div>
                   </li>
                   <li class="py-2">
-                    <div class="flex items-center">
+                    <div
+                      class="flex items-center"
+                      data-aos="zoom-in"
+                      data-aos-delay="950"
+                    >
                       <div>
                         <span
-                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
+                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
                         >
                           <!-- Icon -->
                           <i class="fas fa-toolbox"></i>
@@ -435,10 +461,14 @@
                     </div>
                   </li>
                   <li class="py-2">
-                    <div class="flex items-center">
+                    <div
+                      class="flex items-center"
+                      data-aos="zoom-in"
+                      data-aos-delay="1050"
+                    >
                       <div>
                         <span
-                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
+                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 mr-3"
                         >
                           <!-- Icon -->
                           <i class="fas fa-chart-bar"></i>
@@ -796,57 +826,57 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- End of Footer Section -->
-    <script src="./assets/js/tilt.jquery.js"></script>
-  </body>
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      delay: 200, // values from 0 to 3000, with step 50ms
-      duration: 800, // values from 0 to 3000, with step 50ms
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-    });
-  </script>
-  <!-- Navigation Script -->
-  <script src="./assets/js/navbar.js"></script>
-  <!-- Typed.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-  <script>
-    $(function () {
-      $(".typed").typed({
-        strings: ["Creative.", "Flexible.", "Affordable."],
-        // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        stringsElement: null,
-        // typing speed
-        typeSpeed: 60,
-        // time before typing starts
-        startDelay: 400,
-        // backspacing speed
-        backSpeed: 20,
-        // time before backspacing
-        backDelay: 1000,
-        // loop
-        loop: true,
-        // false = infinite
-        // loopCount: 5,
-        // show cursor
-        showCursor: false,
-        // character for cursor
-        cursorChar: "|",
-        // attribute to type (null == text)
-        attr: null,
-        // either html or text
-        contentType: "html",
-        // call when done callback function
-        callback: function () {},
-        // starting callback function before each string
-        preStringTyped: function () {},
-        //callback for every typed string
-        onStringTyped: function () {},
-        // callback for reset
-        resetCallback: function () {},
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
       });
-    });
-  </script>
+    </script>
+    <!-- Navigation Script -->
+    <script src="./assets/js/navbar.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script>
+      $(function () {
+        $(".typed").typed({
+          strings: ["Creative.", "Flexible.", "Affordable."],
+          // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+          stringsElement: null,
+          // typing speed
+          typeSpeed: 60,
+          // time before typing starts
+          startDelay: 400,
+          // backspacing speed
+          backSpeed: 20,
+          // time before backspacing
+          backDelay: 1000,
+          // loop
+          loop: true,
+          // false = infinite
+          // loopCount: 5,
+          // show cursor
+          showCursor: false,
+          // character for cursor
+          cursorChar: "|",
+          // attribute to type (null == text)
+          attr: null,
+          // either html or text
+          contentType: "html",
+          // call when done callback function
+          callback: function () {},
+          // starting callback function before each string
+          preStringTyped: function () {},
+          //callback for every typed string
+          onStringTyped: function () {},
+          // callback for reset
+          resetCallback: function () {},
+        });
+      });
+    </script>
+    <script src="./assets/js/vanilla-tilt.js"></script>
+  </body>
 </html>
