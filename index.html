@@ -36,82 +36,60 @@
             class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
             href="#"
             >bitsKraft</a
-          ><button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-            onclick="toggleNavbar('collapse-navbar')"
           >
-            <i class="text-white fas fa-bars"></i>
-          </button>
         </div>
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="collapse-navbar"
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
+          type="button"
+          onclick="openNav()"
         >
-          <ul
-            class="flex flex-col lg:flex-row list-none lg:ml-auto"
-            id="navLinks"
-          >
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-              >
-                <span class="lg:hidden inline-block ml-2">Home</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><span class="lg:hidden inline-block ml-2">Info</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><span class="lg:hidden inline-block ml-2">About Us</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><span class="lg:hidden inline-block ml-2">Contact Us</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg"
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Post</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-              >
-            </li>
-          </ul>
+          <i class="text-white fas fa-bars"></i>
+        </button>
+        <div id="mySidenav" class="sidenav">
+          <span class="close-btn-wrapper">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+          </span>
+          <a href="#main" class="button--secondary">
+            <span class="text">Home</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a href="#info" class="button--secondary">
+            <span class="text">Info</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a href="#aboutus" class="button--secondary">
+            <span class="text">About Us</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a href="#features" class="button--secondary">
+            <span class="text">Features</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a href="#contactus" class="button--secondary">
+            <span class="text">Contact Us</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a class="button--secondary">
+            <span class="text">Instagram</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a class="button--secondary">
+            <span class="text">Facebook</span>
+            <span class="icon-arrow"></span>
+          </a>
+          <a class="button--secondary">
+            <span class="text">Twitter</span>
+            <span class="icon-arrow"></span>
+          </a>
         </div>
       </div>
     </nav>
     <!-- End of Navigation -->
 
     <!-- Splash Page -->
-    <main>
+    <main id="main">
       <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center"
         style="min-height: 75vh"
@@ -271,7 +249,7 @@
           </div>
 
           <!-- Text Box and Card Container -->
-          <div class="flex flex-wrap items-center mt-24">
+          <div id="info" class="flex flex-wrap items-center mt-24">
             <!-- Text Box Container -->
             <div
               class="w-full md:w-5/12 px-4 mr-auto ml-auto"
@@ -350,7 +328,7 @@
       <!-- End of Services Section -->
 
       <!-- About Section -->
-      <section class="relative py-20">
+      <section id="aboutus" class="relative py-20">
         <!-- Making Polygon Shape in Background -->
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -463,7 +441,7 @@
                         </span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600"><b>Online presence</b></h4>
+                        <h4 class="text-gray-600"><b>SEO Optimization</b></h4>
                       </div>
                     </div>
                   </li>
@@ -483,7 +461,7 @@
                       </div>
                       <div>
                         <h4 class="text-gray-600">
-                          <b>Affordable maintenance</b>
+                          <b>Great Maintenance</b>
                         </h4>
                       </div>
                     </div>
@@ -518,7 +496,7 @@
       <!-- End of About Section -->
 
       <!-- Contact Section -->
-      <section class="pb-20 relative block bg-gray-900">
+      <section id="features" class="pb-20 relative block bg-gray-900">
         <!-- Making Polygon Shape in Background -->
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -548,7 +526,7 @@
                 class="text-4xl font-semibold text-white"
                 data-aos="fade-down"
               >
-                Build something
+                BUILD SOMETHING GREAT
               </h2>
               <p
                 class="text-lg leading-relaxed mt-4 mb-4 text-gray-500"
@@ -573,11 +551,11 @@
               </div>
               <!-- Text Box -->
               <h5 class="text-xl mt-5 font-semibold text-white">
-                Excelent Services
+                Excellent Services
               </h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                We offer excellent services whether it is Website crafting, SEO
+                optimizing or Market analysis.
               </p>
             </div>
             <!-- Item -->
@@ -597,8 +575,8 @@
                 Grow your market
               </h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Increase the potentiality of your business with us in this
+                competetive market.
               </p>
             </div>
             <!-- Item -->
@@ -616,15 +594,15 @@
               <!-- Text Box -->
               <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Launch your business anytime online and let others know about
+                your business.
               </p>
             </div>
           </div>
         </div>
       </section>
       <!-- Contact Form -->
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <section id="contactus" class="relative block py-24 lg:pt-0 bg-gray-900">
         <!-- Container -->
         <div
           class="container mx-auto px-4 pt-6"
@@ -871,17 +849,17 @@
     <script>
       $(function () {
         $(".typed").typed({
-          strings: ["Creative.", "Flexible.", "Affordable."],
+          strings: ["Creative.", "Flexible.", "Innovative."],
           // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
           stringsElement: null,
           // typing speed
           typeSpeed: 60,
           // time before typing starts
-          startDelay: 400,
+          startDelay: 0,
           // backspacing speed
           backSpeed: 20,
           // time before backspacing
-          backDelay: 1000,
+          backDelay: 2000,
           // loop
           loop: true,
           // false = infinite
